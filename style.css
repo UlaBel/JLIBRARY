@@ -1,0 +1,382 @@
+body {
+    font-family: Lancelot;
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding:0px;
+    margin:0px;
+    
+}
+
+
+
+header, footer, img {
+    width: 94px;
+    height: 120px;
+    margin-right: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+                url(images/BG1.jpg) no-repeat center center fixed;
+    background-size: cover; 
+    color: #f9faf8;
+    text-shadow:0px 0px 5px black,
+                0px 0px 20px black,
+                0px 0px 40px black; 
+                
+}
+.intro{
+    width: 94px;
+    height: 120px;
+    margin-right: auto;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+                url(images/BG1.jpg) no-repeat center center fixed;
+    background-size: cover; 
+    color: #f9faf8;
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+
+}
+.header-link {
+    display: flex;
+        padding: 0px 100px 0px 0px;  
+}
+
+.header-link a {
+    text-decoration: none;
+    
+    font-size: 28px;
+    padding: 10px;
+    font-family: 'Lancelot', arial;
+}
+header, .intro{
+    display: flex;
+    width:100%;
+    align-self: stretch;
+    align-items: center;
+    justify-content:space-around;
+    flex-flow: row wrap;
+    gap:15%;
+}
+
+
+
+.main-text h1 {
+    
+    font-weight: bolder;
+    align-self: flex-start;
+    margin-bottom: -6px;
+    margin-top: -130px;
+    font-size: 84px;
+    line-height: 80px;
+    
+    
+    
+    
+}
+
+.sub-text {
+    color:#e5e7eb;
+    font-size: 38px;
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+button {
+    background-color: #181522;
+    flex:0 1 auto;
+    width:180px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color:#f9faf8;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 2px;
+    font-family: Lancelot, Arial, Helvetica, sans-serif
+}
+
+header ul {
+    display:flex;
+    gap:16px;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9faf8;
+}
+a:hover {
+    color: #1b4ef7;
+}
+
+.intro{
+    height:100vh;
+    gap:32px;
+}
+
+.main-text {
+    margin-left:15%;
+    display:flex;
+    flex-flow: column wrap;
+    flex:1;
+}
+
+.image {
+    flex:1;
+    display:flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items:center;
+    color:#1F2937;
+    margin-top: 40px;
+    margin-right: 15%;
+    min-width:300px;
+    max-height:100%;
+    overflow: hidden;
+
+}
+
+
+
+.main {
+
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content:space-between;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+    url(images/blur.jpg)   center fixed;
+    background-color: #44638f;
+    color: #f9faf8;
+    flex-flow: column wrap;
+    
+
+  
+
+}
+/*content part*/ 
+
+.content {
+    margin: 0px ;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.content p {
+    font-size: 20px;
+    
+    
+}
+.content h2{
+    font-size: 46px;
+    font-weight: bolder;
+    text-align: center;
+
+}
+
+.cards {
+    display:flex;
+    justify-content: space-around;
+    gap:32px;
+    flex-flow: row wrap;
+}
+
+
+
+.card {
+    max-width: 150px;
+    color: #7fabe900;
+    transition:ease-in .7s;
+    text-align: center;
+}
+
+.card:hover {
+    color: #f9faf8;
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+
+}
+.content-img1 img {
+    width:144px;
+    height:144px;
+    background-image: linear-gradient(180deg, #6e6e6e, rgba(0, 0, 0, 0)); 
+    
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img2 img {
+    width:144px;
+    height:144px;
+    
+    background-image: linear-gradient(180deg, #6e6e6e, rgba(0, 0, 0, 0)); 
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img3 img {
+    width:144px;
+    height:144px;
+   
+    background-image: linear-gradient(180deg, #6e6e6e, rgba(0, 0, 0, 0)); 
+    
+    border-radius: 20px;
+    transition: ease 0.1s;
+}
+.content-img4 img {
+    width:144px;
+    height:144px;
+   
+    background-image: linear-gradient(180deg, #6e6e6e, rgba(0, 0, 0, 0)); 
+    border-radius: 30px;
+    transition: ease 0.1s;
+    
+}
+.content-img1:hover {
+    transform:scale(1.05);
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+.content-img2:hover {
+    transform:scale(1.05);
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+.content-img3:hover {
+    transform:scale(1.05);
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+.content-img4:hover {
+    transform:scale(1.05);
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+/*QUOTE SECTION*/ 
+.quote {
+    padding:50px 25%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+                url(images/BG2.jpg) no-repeat center center fixed;
+    
+    background-size: cover;
+    font-size: 26px;
+    font-weight:lighter;
+    font-style: italic;
+    color:#ffffff;
+    
+    
+}
+
+.quote p{
+    
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+
+.author {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow:0px 10px 5px black,
+                 0px 10px 20px black,
+                  0px 10px 40px rgb(5, 5, 5); 
+}
+/*SIGN UP SECTION*/ 
+.sign-up-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:32px;
+    padding:36px;
+   
+    border-radius: 5px;
+    margin:50px auto;
+    color: #f9faf8;
+    flex-flow: row wrap;
+
+  
+}
+    
+    
+
+
+.sign-up-section button {
+    border: 2px solid #f9faf8;
+}
+
+button:hover {
+    background-color: #f9faf8;
+    color: #1b43f7;
+}
+
+.sign-up-section p {
+    margin:0px;
+    font-size: 25px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 24px 0px;
+    align-self: stretch;
+}
+
+@font-face {
+    font-family: Lancelot;
+    src: url(resources/Lancelot.ttf);
+}
+
+@media only screen and (max-width: 783px){
+    .main-text {
+        margin-right: 15%;
+        align-items: center;
+        size: 80px;
+    }
+    .image {
+        margin-left: 15%;
+        height: 200px;
+    }
+    
+    .card {
+        color: #f9faf8;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 30px;
+        margin: 0 auto;
+      background-position: center -100px;
+      
+    }
+        
+    }
+
+
+@media only screen and (max-width: 561px){
+
+    .quote {
+        padding: 32px 25%;
+    }
+}
+
+@media only screen and (max-width: 346px){
+header ul {
+    margin-right: 10%;
+}
+
+}
