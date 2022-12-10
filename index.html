@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="images/Logo.png">
     <title>Polaris Library</title>
@@ -61,30 +62,58 @@
             </div>
         </div>
         <div class="content">
-            <h3>Polaris Best Picks</h3>
-            <div class="cards">
-                <div class="card">
-                    <div class="content-img1"> <a href="resources/Plato_Phaedo.pdf"> <img src="images/Plato_Phaedo.webp"> </a>
-                    </div>
-                    <p>Plato Phaedo</p>
-                </div>
-                <div class="card">
-                    <div class="content-img2"> <a href="resources/3.PlatoRepblic.pdf"> <img src="images/Republic.jpg"> </a> </div>
-                    <p>The Republic of Plato</p>
-                </div>
-                <div class="card">
-                    <div class="content-img3"> <a href="resources/The Odyssey.pdf"> <img src="images/ODDYSSSEY.jpg"> </a></div>
-                    <p>Homer's Odyssey</p>
-                </div>
-                <div class="card">
-                    <div class="content-img4"> <a href="resources/homer_the_iliad.pdf"> <IMG src="images/ILIAD.jpg"> </a> </div>
-                    
-                    <p>Homer's Iliad </p>
-                    
-                </div>
-            </div>
+            <h2>Polaris Best Picks</h2> 
         </div>
+        <!-- Swiper -->
+    <div class="swiper mySwiper">
         
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a class="swiper-slide" href="resources/homer_the_iliad.pdf" onclick="return myFunction();" >  <img src="images/ILIAD.jpg" /> </a> <p>Homer's Iliad </p>
+          </div>
+          <div class="swiper-slide">
+           <a class="swiper-slide" href="resources/Plato_Phaedo.pdf " onclick="return myFunction();"> <img src="images/Plato_Phaedo.webp" /> </a> <p>Plato Phaedo</p>
+          </div>
+          <div class="swiper-slide">
+           <a class="swiper-slide" href="resources/The Odyssey.pdf"   onclick="return myFunction();">  <img src="images/ODDYSSSEY.jpg" /> </a><p>Homer's Odyssey</p>
+          </div>
+          <div class="swiper-slide">
+           <a class="swiper-slide" href="resources/3.PlatoRepblic.pdf " onclick="return myFunction();"> <img src="images/Republic.jpg" /> </a> <p>The Republic of Plato</p>
+          </div>
+          
+           
+           </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        
+         <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          effect: "coverflow",
+           centeredSlides: true,
+          slidesPerView: "auto",
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+            
+          },
+          
+        navigation: {
+           
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+          
+        },
+        
+        
+        });
+      </script>
         <div class="quote">
             <p>I've been tooo damn slow with reading, my answer will definitely change once I read more, especially the more philosophically-dense one.</p>
             <p class="author">-Polaris J</p>
@@ -95,7 +124,29 @@
                 <p><b>pick a book and start reading </b></p>
                 <p class="small">Sign up for our product by clicking that button right over there!</p>
             </div>
-            <button class="sign-up">Sign up</button>
+            <div class="center">  <button id="show-signup2">Sign up</button> </div>
+        </div>
+        <div class="popup2"> 
+            <div class="close-btn"> &times; </div>
+            <div class="form">
+                <h2>Sign Up</h2>
+            <div class="form-element">
+            <label for="email"> Email </label>
+            <input type="text" id="email" placeholder="Enter Email"> 
+            </div>    
+
+            <div class="form-element"> 
+                <label for="password"> Password</label>
+                <input type="password" id="password" placeholder="Enter Password">
+            </div>
+            <div class="form-element">
+                <button >Sign Up </button>
+            </div>
+        </div>
+        <script src="myscripts.js"></script>
+        </div>
+            
+            </div>
         </div>
     </div>
 
