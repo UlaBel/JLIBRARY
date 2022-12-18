@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../books/books.css" >
+	<link rel="icon" href="../images/Logo.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+    <title>Books</title>
+</head>
+<body>
+	<header>
+        
+
+		<div class="header-logo">
+		   <a href="../index.html">  <img src="../images/Logo.png"> </a>
+		</div>
+		
+		<ul>
+			<li> <a href="../index.html">Home</a> </li> 
+		   <li> <a href="../books/books.html">Books</a> </li> 
+			<li> <a href="../authors/authors.html">Authors </a> </li>
+		   <li> <a href="#">Contact</a> </li>   
+			<div class="cursor"> </div>                  
+		</ul>
+		<script> 
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left =  e.clientX + 'px';
+			cursor.style.top =  e.clientY + 'px'; 
+		})
+		
+		</script>
+		
+	</header>    
+
+	<div class="main">
+		
+        <div class="intro"> 
+			
+			<div class="container">
+				<div class="card">
+					<div class="imgbox">
+						
+						<i class="fab fa-homer"> <img src="../images/iliad.jpg"> </i>
+					</div>
+					<div class="content" >
+						
+						<h3 id="homer">Homer</h3>
+						<p> The Iliad is one of two major ancient Greek epic poems attributed to Homer.
+						</p>
+						<a href="../resources/homer_the_iliad.pdf">Download</a>
+					</div>
+				</div>
+		
+		
+				<div class="card">
+					<div class="imgbox">
+						<i class="fab fa-plato" > <img src="../images/ODDYSSSEY.jpg"></i>
+					</div>
+					<div class="content">
+						<h3 id="plato">ODDYSSSEY</h3>
+						<p>  It is one of the oldest extant works of literature still widely read by modern audiences.  </p>
+						<a href="../resources/The Odyssey.pdf">Download</a>
+					</div>
+				</div>
+                <div class="card">
+					<div class="imgbox">
+						<i class="fab fa-plato" > <img src="../images/Plato_Phaedo.webp"></i>
+					</div>
+					<div class="content">
+						<h3 id="plato">Phaedo</h3>
+						<p>Phaedo is one of the best-known dialogues of Plato's middle period.</p>
+						<a href="../resources/Plato_Phaedo.pdf">Download</a>
+					</div>
+				</div>
+                <div class="card">
+					<div class="imgbox">
+						<i class="fab fa-plato" > <img src="../images/Republic.jpg"></i>
+					</div>
+					<div class="content">
+						<h3 id="plato">The Republic</h3>
+						<p> The Republic is a Socratic dialogue concerning justice,  </p>
+						<a href="../resources/3.PlatoRepblic.pdf">Download</a>
+					</div>
+				</div>
+				<div class="image">
+				<p></p>
+			
+		
+			
+				</div>
+			</div>
+		</div>
+	
+	<div class="sign-up-section">
+		<div class="text">
+			<p><b>pick a book and start reading </b></p>
+			<p class="small">Sign up for our product by clicking that button right over there!</p>
+		</div>
+		<div class="center">  <button id="show-signup2">Sign up</button> </div>
+	</div>
+	<div class="popup2"> 
+		<div class="close-btn"> &times; </div>
+		<div class="form">
+			<h2>Sign Up</h2>
+		<div class="form-element">
+		<label for="email"> Email </label>
+		<input type="text" id="email" placeholder="Enter Email"> 
+		</div>    
+
+		<div class="form-element"> 
+			<label for="password"> Password</label>
+			<input type="password" id="password" placeholder="Enter Password">
+		</div>
+		<div class="form-element">
+			<button >Sign Up </button>
+			<script> 
+			 document.querySelector("#show-signup2").addEventListener("click",function(){
+   document.querySelector(".popup2").classList.add("active");
+}); 
+document.querySelector(".popup2 .close-btn").addEventListener("click",function(){
+   document.querySelector(".popup2").classList.remove("active");
+}); 
+</script>
+		</div>
+		
+	</div>
+	
+	</div>
+</div>	
+</div>
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+		<footer>
+			<p>Copyright <span>&#169</span> ⵍⴰⵍⵍⴰ ⵅⴰⵡⵍⴰ 2022</p>
+		</footer>
+</body>
+</html>

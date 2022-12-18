@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../authors/authors.css" >
+	<link rel="icon" href="../images/Logo.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+    <title>Authors</title>
+</head>
+<body>
+	<header>
+        
+
+		<div class="header-logo">
+		   <a href="../index.html">  <img src="../images/Logo.png"> </a>
+		</div>
+		
+		<ul>
+			<li> <a href="../index.html">Home</a> </li> 
+		   <li> <a href="../books/books.html">Books</a> </li> 
+			<li> <a href="../authors/authors.html">Authors </a> </li>
+		   <li> <a href="#">Contact</a> </li>   
+			<div class="cursor"> </div>                  
+		</ul>
+		<script> 
+		const cursor = document.querySelector('.cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left =  e.clientX + 'px';
+			cursor.style.top =  e.clientY + 'px'; 
+		})
+		
+		</script>
+		
+	</header>    
+
+	<div class="main">
+		
+        <div class="intro"> 
+			
+			<div class="container">
+				<div class="card">
+					<div class="imgbox">
+						
+						<i class="fab fa-homer"> <img src="../authors/homerr.jpg"> </i>
+					</div>
+					<div class="content" >
+						
+						<h3 id="homer">Homer</h3>
+						<p> Homer, ancient Greek poet, presumed author of the Iliad and the Odyssey. The ancient Greeks attributed to him the great epic poems the Iliad and the Odyssey. Modern scholars generally agree that he composed 
+							 the Iliad.
+						</p>
+						<a href="https://www.britannica.com/biography/Homer-Greek-poet">Read more</a>
+					</div>
+				</div>
+		
+		
+				<div class="card">
+					<div class="imgbox">
+						<i class="fab fa-plato" > <img src="../authors/plato.jpg"></i>
+					</div>
+					<div class="content">
+						<h3 id="plato">Plato</h3>
+						<p>Plato , Greek philosopher, who with Socrates and Aristotle laid the philosophical foundations of Western culture. His thought has logical, epistemological, and metaphysical aspects, but mostly is ethical.
+						</p>
+						<a href="https://www.britannica.com/biography/Plato">Read more</a>
+					</div>
+				</div>
+				<div class="image">
+				<p></p>
+			
+		
+			
+				</div>
+			</div>
+		</div>
+	
+	<div class="sign-up-section">
+		<div class="text">
+			<p><b>pick a book and start reading </b></p>
+			<p class="small">Sign up for our product by clicking that button right over there!</p>
+		</div>
+		<div class="center">  <button id="show-signup2">Sign up</button> </div>
+	</div>
+	<div class="popup2"> 
+		<div class="close-btn"> &times; </div>
+		<div class="form">
+			<h2>Sign Up</h2>
+		<div class="form-element">
+		<label for="email"> Email </label>
+		<input type="text" id="email" placeholder="Enter Email"> 
+		</div>    
+
+		<div class="form-element"> 
+			<label for="password"> Password</label>
+			<input type="password" id="password" placeholder="Enter Password">
+		</div>
+		<div class="form-element">
+			<button >Sign Up </button>
+			<script> 
+			 document.querySelector("#show-signup2").addEventListener("click",function(){
+   document.querySelector(".popup2").classList.add("active");
+}); 
+document.querySelector(".popup2 .close-btn").addEventListener("click",function(){
+   document.querySelector(".popup2").classList.remove("active");
+}); 
+</script>
+		</div>
+		
+	</div>
+	
+	</div>
+</div>	
+</div>
+<a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+		<footer>
+			<p>Copyright <span>&#169</span> ⵍⴰⵍⵍⴰ ⵅⴰⵡⵍⴰ 2022</p>
+		</footer>
+</body>
+</html>

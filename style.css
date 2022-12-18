@@ -6,6 +6,7 @@ body {
     align-items: center;
     padding:0px;
     margin:0px;
+  
     
 }
 
@@ -23,6 +24,7 @@ header, footer, img {
                 0px 0px 20px black,
                 0px 0px 40px black; 
                 
+                
 }
 
 
@@ -37,6 +39,8 @@ header, footer, img {
     text-shadow:0px 10px 5px black,
                  0px 10px 20px black,
                   0px 10px 40px rgb(5, 5, 5); 
+                  
+
 
 }
 ul {
@@ -194,8 +198,8 @@ ul li:hover ~ .cursor {
     transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
     padding: 20px 30px ;
-    background: #a7bcb9;
-    color: black;
+    background: #131313;
+    color: rgb(248, 248, 248);
     text-shadow: none;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -219,7 +223,7 @@ ul li:hover ~ .cursor {
     height: 33px;
     width: 35px;
     font-size: 67px;
-    background: #24527a;
+    background: #161616;
     color: #eee;
     text-align: center;
     line-height: 40px;
@@ -231,7 +235,7 @@ ul li:hover ~ .cursor {
 
 .popup .form h2{
     text-align: center;
-    color: #222;
+    color: rgb(255, 255, 255);
     margin: 10px 0px 20px;
     font-size: 35px;
 }
@@ -243,7 +247,7 @@ ul li:hover ~ .cursor {
 
 .popup .form .form-element label{
     font-size: 19px;
-    color: #222;
+    color: rgb(255, 255, 255);
     font-weight: 600;
 
 }
@@ -282,8 +286,9 @@ ul li:hover ~ .cursor {
     transform: translate(-50%, -50%) scale(1.25);
     width: 380px;
     padding: 20px 30px ;
-    background: #a7bcb9;
-    color: black;
+    background: blur;
+    background: #141414;
+    color: rgb(255, 255, 255);
     text-shadow: none;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -307,7 +312,7 @@ ul li:hover ~ .cursor {
     height: 33px;
     width: 35px;
     font-size: 67px;
-    background: #24527a;
+    background: #1d1d1d;
     color: #eee;
     text-align: center;
     line-height: 40px;
@@ -319,7 +324,7 @@ ul li:hover ~ .cursor {
 
 .popup2 .form h2{
     text-align: center;
-    color: #222;
+    color: rgb(253, 253, 253);
     margin: 10px 0px 20px;
     font-size: 35px;
 }
@@ -331,7 +336,7 @@ ul li:hover ~ .cursor {
 
 .popup2 .form .form-element label{
     font-size: 19px;
-    color: #222;
+    color: rgb(238, 238, 238);
     font-weight: 600;
 
 }
@@ -361,6 +366,12 @@ ul li:hover ~ .cursor {
     cursor: pointer;
 
 }
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
 /*swiper*/
 
 .swiper {
@@ -545,7 +556,7 @@ ul li:hover ~ .cursor {
     justify-content: center;
     align-items: center;
     gap:32px;
-    padding:36px;
+    padding:6px;
    
     border-radius: 5px;
     margin:50px auto;
@@ -568,12 +579,31 @@ button:hover {
 }
 
 .sign-up-section p {
-    margin:0px;
-    font-size: 25px;
+    margin:1px;
+    left: 10px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
 }
 
 .small {
     font-size: 12px;
+}
+
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #252525;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
 }
 
 footer {
@@ -583,6 +613,10 @@ footer {
     padding: 24px 0px;
     align-self: stretch;
 }
+
+footer p{
+    font-size: 23px;
+} 
 
 @font-face {
     font-family: Lancelot;
