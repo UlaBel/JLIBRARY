@@ -6,6 +6,9 @@ body {
     align-items: center;
     padding:0px;
     margin:0px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
+                url(images/BG1.jpg) no-repeat center center fixed ;
+                background-size:cover;
   
     
 }
@@ -15,7 +18,7 @@ body {
 header, footer, img {
     width: 94px;
     height: 120px;
-    margin-right: auto;
+    margin-right:auto;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)) no-repeat fixed, 
                 url(images/BG1.jpg) no-repeat center center fixed;
     background-size: cover; 
